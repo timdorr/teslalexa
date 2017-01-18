@@ -1,0 +1,13 @@
+{
+  "name": "Teslalexa",
+  "version": "0.0.1",
+  "description": "Control a Tesla from Alexa",
+  "author": "Tim Dorr <timdorr@timdorr.com>",
+  "license": "MIT",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6"
+  },
+  "scripts": {
+    "publish": "zip -rq teslalexa.zip index.js teslaapi.js intents/ node_modules/ && aws lambda update-function-code --function-name TeslaControl --zip-file fileb://./teslalexa.zip && rm teslalexa.zip"
+  }
+}

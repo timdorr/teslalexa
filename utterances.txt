@@ -1,0 +1,37 @@
+CheckBattery what is the battery level
+CheckBattery what is the charge level
+CheckBattery what is the range
+CheckBattery what is the range left
+CheckBattery what is the range remaining
+CheckBattery check the battery level
+CheckBattery check the charge level
+CheckBattery check the range
+CheckBattery how much charge is
+CheckBattery how much range is
+CheckBattery how much battery is
+CheckBattery how much charge is left
+CheckBattery how much range is left
+CheckBattery how much battery is left
+CheckBattery how many miles are left
+CheckBattery how many miles of range
+CheckBattery how many miles of range are left
+
+ChargePortAction open the charge port
+ChargeAction {action} charging
+ChargeAction {action} to charge
+HonkAction honk the horn
+HonkAction honk
+LightsAction flash the lights
+DoorAction {lock} the door
+DoorAction {lock} the doors
+DoorAction {lock} the car
+ClimateAction {action} pre-heating
+ClimateAction {action} heating
+ClimateAction {action} cooling
+ClimateAction {action} warming
+RemoteStartAction start
+RemoteStartAction start the car
+RemoteStartAction remote start
+
+LoginAction log in
+GetVehicleAction get vehicle

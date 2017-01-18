@@ -1,0 +1,38 @@
+{
+  "intents": [
+    { "intent": "CheckBattery" },
+    { "intent": "ChargePortAction" },
+  	{
+  		"intent": "ChargeAction",
+      "slots": [
+        {
+          "name": "action",
+          "type": "START_STOP"
+        }
+      ]
+  	},
+    { "intent": "HonkAction" },
+    { "intent": "LightsAction" },
+  	{
+  		"intent": "DoorAction",
+      "slots": [
+        {
+          "name": "lock",
+          "type": "LOCK_UNLOCK"
+        }
+      ]
+  	},
+  	{
+  		"intent": "ClimateAction",
+      "slots": [
+        {
+          "name": "action",
+          "type": "START_STOP"
+        }
+      ]
+  	},
+    { "intent": "RemoteStartAction" },
+    { "intent": "LoginAction" },
+    { "intent": "GetVehicleAction" }
+  ]
+}
