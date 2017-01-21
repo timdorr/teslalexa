@@ -7,10 +7,11 @@ Control your Tesla from Alexa. Uses the [Tesla JSON API](https://github.com/timd
 - [NodeJS](https://nodejs.org/) (4.3 or higher)
 - An [AWS (Amazon Web Services) account](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html)
 - An [Amazon Developer account](https://developer.amazon.com/edw/home.html)
+- [awscli](https://aws.amazon.com/cli/) installed and configured
 
 ## Install
 
-I'm looking to automate this with CloudFormation in the future. PRs are appreciated!
+**Yes, I know this is huge. I'm looking to automate this more in the future. PRs to help are appreciated!**
 
 1. Go to the [Releases tab](https://github.com/timdorr/teslalexa/releases) and download the zip or tar.gz of the latest release.
 2. Unzip to somewhere and open up a terminal console in that location.
@@ -55,8 +56,9 @@ I'm looking to automate this with CloudFormation in the future. PRs are apprecia
   5. On the Test tab, it should be enabled for testing on your account.
   6. Grab the ID at the top of the page (starts with ` amzn1.ask.skill`).
 6. Head back to the AWS Lambda function you created and add a new APP_ID environment variable with the Skill ID you just copied.
-7. Back in the Amazon Developer Console, you should be able to test with an utterance of "Tell my car to log in" and get back some code that says something about being logged in.
-8. Also run "Tell my car to get vehicle" to make sure it can find your vehicle.
+7. Back in the terminal console, run `npm run lambda` to publish the code to your Lambda function.
+8. Back in the Amazon Developer Console, you should be able to test with an utterance of "Tell my car to log in" and get back some code that says something about being logged in.
+9. Also run "Tell my car to get vehicle" to make sure it can find your vehicle.
 
 [npm-badge]: https://img.shields.io/npm/v/teslalexa.svg?style=flat-square
 [npm]: https://www.npmjs.org/package/teslalexa
