@@ -1,9 +1,10 @@
 {
-  "name": "Teslalexa",
-  "version": "0.0.1",
+  "name": "teslalexa",
+  "version": "0.1.0",
   "description": "Control a Tesla from Alexa",
   "author": "Tim Dorr <timdorr@timdorr.com>",
   "license": "MIT",
+  "repository": "timdorr/teslalexa",
   "dependencies": {
     "alexa-sdk": "^1.0.6"
   },
