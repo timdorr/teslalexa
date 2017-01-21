@@ -2,8 +2,6 @@
 
 const Alexa = require('alexa-sdk')
 
-const APP_ID = 'amzn1.ask.skill.3a53e73c-e55d-45c6-8cec-651c968f9acd'
-
 const handlers = {
     CheckBattery: require('./intents/battery'),
 
@@ -21,7 +19,7 @@ const handlers = {
 
 exports.handler = function (event, context) {
   const alexa = Alexa.handler(event, context)
-  alexa.appId = APP_ID
+  alexa.appId = process.env.APP_ID
   alexa.dynamoDBTableName = 'Teslalexa'
   alexa.registerHandlers(handlers)
   alexa.execute()
