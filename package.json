@@ -9,6 +9,6 @@
     "alexa-sdk": "^1.0.6"
   },
   "scripts": {
-    "publish": "zip -rq teslalexa.zip index.js teslaapi.js intents/ node_modules/ && aws lambda update-function-code --function-name TeslaControl --zip-file fileb://./teslalexa.zip && rm teslalexa.zip"
+    "lambda": "zip -rq teslalexa.zip index.js teslaapi.js intents/ node_modules/ && aws lambda update-function-code --function-name TeslaControl --zip-file fileb://./teslalexa.zip && rm teslalexa.zip"
   }
 }
